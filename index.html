@@ -11,38 +11,33 @@
         <header>
             <h1>DREAM RENTALS</h1>
             <div class="brand-logos">
-                <img src="honda-logo.png" alt="HONDA" class="brand-logo">                
+                <img id="brandLogo" src="honda-logo.png" alt="Brand Logo" class="brand-logo">                
             </div>
         </header>
-       
+        
+        <!-- Sidebar with Car Models -->
         <div class="sidebar">
             <h2>MODELS</h2>
-            <ul>
-                <li>Toyota Corolla</li>
-                <li>Chevrolet Spark</li>
-                <li>Ford escape</li>
-                <li>Ford Mustang</li>
-                <li>Nissan altima</li>
-                <li>Honda civic</li>
-                <li>Kia shortage</li>
-                <li>Dodge charger</li>
-            </ul>
+            <ul id="carList"></ul>
         </div>
 
-        
+        <!-- Main Content with Car Image and Book Button -->
         <div class="main-content">
-            <img src="honda_accord.png" alt="Car Image" class="car-image">
+            <img src="default_car.png" alt="Car Image" class="car-image" id="carImage">
             <button class="book-btn">BOOK A CAR</button>
         </div>
 
+        <!-- Price and Specifications Section -->
         <div class="price-section">
             <p><strong>STARTING AT</strong></p>
-            <p class="price"> ₹2000/- <span>PER DAY</span></p>
-            <p>Type:</p><br>
-            <p>Seat:</p><br>
-            <p>Transmission:</p><br>
-            <p>Fuel Type:</p><br>
+            <p class="price" id="carPrice">₹2000/- <span>PER DAY</span></p>
+            <p>Type: <span id="carType">Sedan</span></p><br>
+            <p>Seat: <span id="carSeats">5</span></p><br>
+            <p>Transmission: <span id="carTransmission">Automatic</span></p><br>
+            <p>Fuel Type: <span id="carFuel">Petrol</span></p><br>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
