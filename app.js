@@ -2,6 +2,7 @@
 const carData = {
     toyota: {
         name: 'Toyota Corolla',
+        logoName: 'Toyota',
         image: 'toyota_corolla.png',
         price: '₹2500/-',
         type: 'Sedan',
@@ -12,6 +13,7 @@ const carData = {
     },
     chevrolet: {
         name: 'Chevrolet Spark',
+        logoName: 'Chevrolet',
         image: 'chevrolet_spark.png',
         price: '₹1500/-',
         type: 'Hatchback',
@@ -22,6 +24,7 @@ const carData = {
     },
     fordEscape: {
         name: 'Ford Escape',
+        logoName: 'Ford',
         image: 'ford_escape.png',
         price: '₹3000/-',
         type: 'SUV',
@@ -32,6 +35,7 @@ const carData = {
     },
     fordMustang: {
         name: 'Ford Mustang',
+        logoName: 'Ford',
         image: 'ford_mustang.png',
         price: '₹5000/-',
         type: 'Sports Car',
@@ -42,6 +46,7 @@ const carData = {
     },
     nissan: {
         name: 'Nissan Altima',
+        logoName: 'Nissan',
         image: 'nissan_altima.png',
         price: '₹2200/-',
         type: 'Sedan',
@@ -52,6 +57,7 @@ const carData = {
     },
     hondaCivic: {
         name: 'Honda Civic',
+        logoName: 'Honda',
         image: 'honda_civic.png',
         price: '₹2000/-',
         type: 'Sedan',
@@ -62,6 +68,7 @@ const carData = {
     },
     hondaAccord: {
         name: 'Honda Accord',
+        logoName: 'Honda',
         image: 'honda_accord.png',
         price: '₹2800/-',
         type: 'Sedan',
@@ -72,6 +79,7 @@ const carData = {
     },
     kia: {
         name: 'Kia Shortage',
+        logoName: 'Kia',
         image: 'kia_shortage.png',
         price: '₹1800/-',
         type: 'SUV',
@@ -82,6 +90,7 @@ const carData = {
     },
     dodge: {
         name: 'Dodge Charger',
+        logoName: 'Dodge',
         image: 'dodge_charger.png',
         price: '₹4000/-',
         type: 'Sedan',
@@ -123,6 +132,8 @@ function updateCarDetails(carKey) {
 
     // Update the brand logo
     document.getElementById('brandLogo').src = car.logo;
+
+    document.getElementById('logoName').textContent= car.logoName;
 
     // Update the car list, excluding the selected car
     displayCarList(car.name);
