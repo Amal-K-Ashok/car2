@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, rgba(20, 24, 27, 1) 0%, rgba(45, 52, 54, 1) 100%);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 20px;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 24px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.brand-logos {
+    margin-top: 10px;
+}
+
+.brand-logo {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    color: orange;
+}
+
+.main-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.car-image {
+    width: 80%;
+    height: auto;
+}
+
+.book-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: darkorange;
+}
+
+.price-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-left: 1px solid #666;
+    padding: 20px;
+}
+
+.price-section p {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 32px;
+    color: orange;
+}
+
+.price span {
+    font-size: 18px;
+}
