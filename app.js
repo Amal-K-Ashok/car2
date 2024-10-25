@@ -125,6 +125,7 @@ function updateCarDetails(carKey) {
     // Update the main car image and details
     document.getElementById('carImage').src = car.image;
     document.getElementById('carPrice').textContent = car.price;
+    document.getElementById('carName').textContent=car.name;
     document.getElementById('carType').textContent = car.type;
     document.getElementById('carSeats').textContent = car.seat;
     document.getElementById('carTransmission').textContent = car.transmission;
